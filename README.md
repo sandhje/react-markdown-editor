@@ -2,7 +2,23 @@
 
 Yet another markdown editor, this one created with React, Electron and coffee!
 
+A lot of thing still need to be done to make this editor any good, e.g.:
+
+* Fix monaco loading issues in electron app
+* Open/Save functionality
+* Timetravel (read: Ctrl-Z / Ctrl-Y)
+* Fixing layout issues
+* Proper build and distibution processes (appveyor, travis, s3-hosted binaries and stuff like that)
+
+If you have any suggestions, please let me know, e.g. on [gitter](https://gitter.im/sandhje/react-markdown-editor) or by [filing an issue](https://github.com/sandhje/react-markdown-editor/issues)
+
 ## Contributing
+
+Running a development instance of the web-app:
+
+```
+npm run start
+```
 
 Running a development instance of the app:
 
