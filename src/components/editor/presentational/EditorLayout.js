@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../assets/Editor.css";
 
 class EditorLayout extends Component {
     render() {
