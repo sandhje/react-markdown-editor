@@ -17,6 +17,7 @@ class EditorLayout extends Component {
                     height="100%"
                     language="markdown"
                     theme="vs-light"
+                    scrollBeyondLastLine="false"
                     value={this.props.text}
                     onChange={this.props.handleChange}
                     editorDidMount={this.editorDidMount}
