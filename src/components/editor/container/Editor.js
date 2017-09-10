@@ -10,8 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        handleChange: event => {
-            dispatch(update(event.target.value));
+        handleChange: text => {
+            dispatch(update(text));
         }
     };
 };

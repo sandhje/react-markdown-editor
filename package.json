@@ -5,22 +5,26 @@
   "dependencies": {
     "bootstrap": "3",
     "markdown": "^0.5.0",
+    "monaco-editor": "^0.10.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
+    "react-monaco-editor": "^0.10.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.13",
     "redux": "^3.7.2",
     "sanitize-html": "^1.14.1"
   },
   "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "del-cli": "^1.1.0",
     "electron": "^1.7.6",
     "electron-builder": "^19.27.7",
     "foreman": "^2.0.0"
   },
   "main": "src/electron-starter.js",
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
+    "start": "npm run install-monaco && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -28,6 +32,8 @@
     "dev": "nf start",
     "pack": "build --dir",
     "dist": "npm run build && build",
+    "install-monaco": "del-cli public/vs && copyfiles --up 3 node_modules/monaco-editor/min/vs/** public",
+    "preinstall": "npm run install-monaco",
     "postinstall": "install-app-deps"
   },
   "build": {
