@@ -3,4 +3,5 @@
     height: 100vh;
     padding-left: 1em;
     overflow: auto;
+    border-left: 5px solid #EBEBEB;
 }

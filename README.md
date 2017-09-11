@@ -4,7 +4,7 @@ Yet another markdown editor, this one created with React, Electron and coffee!
 
 A lot of thing still need to be done to make this editor any good, e.g.:
 
-* Fix monaco loading issues in electron app
+* Add unit tests and jsdocs for all the "things"
 * Open/Save functionality
 * Timetravel (read: Ctrl-Z / Ctrl-Y)
 * Fixing layout issues
