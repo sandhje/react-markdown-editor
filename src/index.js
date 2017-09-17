@@ -5,6 +5,9 @@ import store from "./store";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import "./index.css";
-import App from "./components/app/presentational/App";
+import App from "./components/app/container/App";
+import IpcRendererMediator from "./electron/ipc-renderer/IpcRendererMediator";
+
+IpcRendererMediator.configure();
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById("root"));

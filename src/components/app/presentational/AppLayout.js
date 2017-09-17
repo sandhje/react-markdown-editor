@@ -4,7 +4,7 @@ import Preview from "../../preview/container/Preview";
 import { Grid, Row, Col } from "react-bootstrap";
 import '../assets/App.css';
 
-class App extends Component {
+class AppLayout extends Component {
   render() {
     return (
       <div className="App">
@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default AppLayout;
