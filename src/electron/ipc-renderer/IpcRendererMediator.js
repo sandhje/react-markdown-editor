@@ -1,5 +1,7 @@
+import store from "../../store";
 import OpenHandler from "./handlers/Open";
 
+const fs = window.require('fs');
 const electron = window.require('electron');
 const ipcRenderer  = electron.ipcRenderer;
 
@@ -11,12 +13,12 @@ class IpcRendererMediator {
     }
 
     static configure() {
-        var openHandler = new OpenHandler();
+        var openHandler = new OpenHandler(fs, store);
         
         var handlers = [
             {
                 event: "open",
-                target: openHandler.handle
+                target: openHandler.handle.bind(openHandler)
             }
         ];
 
