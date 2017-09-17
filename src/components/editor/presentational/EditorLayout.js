@@ -5,8 +5,8 @@ import "brace/theme/chrome";
 import "../assets/Editor.css";
 
 class EditorLayout extends Component {
-    editorDidMount(editor, monaco) {
-        console.log('editorDidMount', editor);
+    editorLoad(editor) {
+        console.log('editorLoad', editor);
         editor.focus();
     }
 
@@ -20,7 +20,7 @@ class EditorLayout extends Component {
                     name="markdown-editor"
                     height="100%"
                     width="100%"
-                    onLoad={this.editorDidMount}
+                    onLoad={this.editorLoad}
                     onChange={this.props.handleChange}
                     fontSize={14}
                     showPrintMargin={true}

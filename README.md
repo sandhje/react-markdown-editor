@@ -7,6 +7,7 @@ A lot of thing still need to be done to make this editor any good, e.g.:
 * Add unit tests and jsdocs for all the "things"
 * Open/Save functionality
 * Timetravel (read: Ctrl-Z / Ctrl-Y)
+* Multiple tabs
 * Fixing layout issues
 * Proper build and distibution processes (appveyor, travis, s3-hosted binaries and stuff like that)
 
